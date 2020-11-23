@@ -1,0 +1,128 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: none;
+}
+
+.calc {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.screen {
+  background: rgba(48, 36, 78, 1);
+  width: 100%;
+  height: 38vh;
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  word-wrap: break-word;
+}
+
+button {
+  height: 100%;
+  width: 25%;
+  cursor: pointer;
+}
+
+.btns-container {
+  width: 100%;
+  height: 74.5vh;
+  position: absolute;
+  top: 25.5%;
+  font-size: 0;
+}
+
+.operation {
+  display: inline-block;
+  width: 25%;
+  margin: 0;
+  height: 16.55%;
+  position: relative;
+  top: 16.5%;
+  font-size: 2rem;
+  border: 1px solid white;
+  color: white;
+  text-shadow: 1px 1px black;
+  background: #6b82f2;
+  font-family: "Roboto";
+}
+
+.number.operation {
+  background: #574d99;
+}
+
+.zero {
+  width: 50%;
+}
+
+.operations-container {
+  width: 100%;
+  height: 70%;
+  font-size: 2.7rem;
+  overflow-y: scroll;
+}
+
+.result-container {
+  width: 100%;
+  height: 30%;
+}
+
+.history {
+  width: 70%;
+  height: 62vh;
+  background: #574d99;
+  float: right;
+  position: absolute;
+  visibility: hidden;
+  z-index: 99;
+  top: 37.5%;
+  left: -250px;
+  overflow-y: scroll;
+  word-break: break-word;
+}
+
+.equal {
+  background: rgb(186, 30, 30);
+}
+
+.new-calculation {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+@media (min-width: 1030px) {
+  /* for computer screens */
+  .calc {
+    width: 400px;
+    height: 400px;
+  }
+  .history {
+    top: 45%;
+  }
+  .screen {
+    height: 27.8vh;
+  }
+}
